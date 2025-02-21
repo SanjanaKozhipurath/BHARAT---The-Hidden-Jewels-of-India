@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Maname&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Khitan+Small+Script&family=Playwrite+AR:wght@100..400&family=Playwrite+BE+VLG:wght@100..400&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Maname&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Khitan+Small+Script&family=Playwrite+AR:wght@100..400&family=Playwrite+BE+VLG:wght@100..400&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Maname&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Khitan+Small+Script&family=Play:wght@400;700&family=Playwrite+AR:wght@100..400&family=Playwrite+BE+VLG:wght@100..400&family=Space+Grotesk:wght@300..700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #c1bfbf;
+    border-radius: 15px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #2f2e2e;
+    border-radius: 15px;
+    transition: 0.5s ease;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #151515;
+}
+
+.head-container {
+    display: inline-flex;
+    max-width: 70rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+header:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.05);
+    z-index: 25;
+}
+
+.mountain1 {
+    position: absolute;
+    bottom: -100px;
+    width: 1500px;
+    right: 0;
+    z-index: 19;
+}
+
+.person {
+    position: absolute;
+    width: 650px;
+    bottom: -100px;
+    left: -70px;
+    z-index: 20;
+}
+
+.mountain2 {
+    position: absolute;
+    width: 1100px;
+    bottom: -100px;
+    left: 0;
+    z-index: 18;
+}
+
+.mountain3 {
+    position: absolute;
+    width: 900px;
+    bottom: 150px;
+    right: 0;
+    z-index: 17;
+}
+
+.sky {
+    position: none;
+    width: 2100px;
+    bottom: 250px;
+    right: 0;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    z-index: 30;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), transparent);
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    scroll-behavior: smooth;
+}
+
+.menu-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+    z-index: 31;
+}
+
+.menu-icon a {
+    text-decoration: none;
+}
+
+.ri-menu-3-line {
+    font-size: 35px;
+    color: #fff;
+    margin-right: 8px;
+}
+
+.ri-menu-3-line:hover{
+    color: #151515;
+    transition: 0.5s ease;
+}
+
+.logo #to-home {
+    color: #fff;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.logo #to-home:hover {
+    color: #151515;
+    transition: 0.5s ease;
+}
+
+.logo #to-home:active {
+    transform: scale(0.9);
+}
+
+.big-title {
+    position: absolute;
+    z-index: 30;
+    line-height: 4rem;
+    top: calc(50% - 2rem);
+    width: 100%;
+    text-align: center;
+    font-size: 12.5rem;
+    font-weight: 530;
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    width: 100%;
+    background: radial-gradient(circle,#000000,#151515 );
+    position: relative;
+}
+
+section img {
+    width: 100%;
+}
+
+.imgContainer {
+    transform: translateY(50px);
+}
+
+.shadow {
+    position: absolute;
+    bottom: 100%;
+    height: 300px;
+    width: 100%;
+    left: 0;
+    z-index: 20;
+    background: linear-gradient(to top, #151515, transparent);
+}
+
+.opacity {
+    opacity: 0;
+}
+
+@media (max-width: 850px) {
+    section .containers {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .big-title {
+        font-size: 3rem;
+    }
+
+    .text {
+        font-size: .8rem;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+}
+
+.main-contents {
+    padding-top: 50px;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+}
+
+.container {
+    height: 33vw;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    overflow-x: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 0;
+    width: 60vw;
+    position: relative;
+    background-color: transparent;
+    align-items: center;
+    justify-self: center;
+    align-self: first baseline;
+}
+
+.container::-webkit-scrollbar {
+    height: 10px;
+}
+
+.container::-webkit-scrollbar-track {
+    background-color: #151515;
+    border-radius: 15px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: #fffefe;
+    border-radius: 15px;
+}
+
+.dest {
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+    font-family: "Play", sans-serif;
+    font-size: 65px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.card {
+    width: 135px;
+    height: 435px;
+    border-radius: 2rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.8);
+    filter: grayscale(.125);
+    flex-shrink: 0;
+    box-shadow: 1.5px 1.5px 3px rgb(252, 252, 252);
+}
+
+.card > .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card > .row > .icon {
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.description p {
+    color: #ffffff;
+    padding-top: 5px;
+}
+
+.wrapper a {
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.description a h4 {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 800;
+}
+
+a h4:hover {
+    color: rgb(102, 146, 187);
+    transition: .5s ease;
+}
+
+a h4:active {
+    transform: scale(0.9);
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 600px;
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+}
+
+.card[for="c1"] {
+    background-image: url('https://i0.wp.com/triparambh.com/wp-content/uploads/2019/07/KumbhalgarhCoverPic.jpg?w=1920&ssl=1');
+}
+
+.card[for="c2"] {
+    background-image: url('https://vargiskhan.com/log/wp-content/uploads/2022/04/places-to-visit-in-gurez-valley-4.jpg');
+}
+
+.card[for="c3"] {
+    background-image: url('https://www.bikatadventures.com/images/BlogspotContents/BlogspotImageUrl44536-Bikat-Adventures.jpg');
+}
+
+.card[for="c4"] {
+    background-image: url('https://www.exoticmiles.com/cities/munsiyari/');
+}
+
+.card[for="c5"] {
+    background-image: url('https://www.luxurytrailsofindia.com/wp-content/uploads/2017/09/morni-hills-lake.jpg');
+}
+
+.card[for="c6"] {
+    background-image: url('https://www.tripbibo.com/blog/wp-content/uploads/2020/08/Kapurthala-1024x768.jpg');
+}
+
+.card[for="c7"] {
+    background-image: url('https://projectmehrauli.com/assets/img/gallery/imgonline-com-ua-CompressToSize-Cwx2HMPb4kHPGxA.jpg');
+}
+
+.card[for="c8"] {
+    background-image: url('https://www.holidify.com/images/bgImages/BHANDARDARA.jpg');
+}
+
+.card[for="c9"] {
+    background-image: url('https://i0.wp.com/www.re-thinkingthefuture.com/wp-content/uploads/2022/11/A8469-An-architectural-review-of-location-Patan-Gujarat.jpg?w=999');
+}
+
+.card[for="c10"] {
+    background-image: url('https://static.toiimg.com/img/101558257/Master.jpg');
+}
+
+.card[for="c11"] {
+    background-image: url('https://media2.thrillophilia.com/images/photos/000/130/901/original/1533185640_Cenotaphs_orchha.jpg?gravity=center&width=752&height=450&crop=fill&quality=auto&fetch_format=auto&flags=strip_profile&format=jpg&sign_url=true');
+}
+
+.card[for="c12"] {
+    background-image: url('https://www.theeraulaa.in/wp-content/uploads/2020/11/IMG_8060-scaled.jpg');
+}
+
+.card[for="c13"] {
+    background-image: url('https://vajiram-prod.s3.ap-south-1.amazonaws.com/Valmiki_Tiger_Reserve_VTR_02fdfb6271.jpg');
+}
+
+.card[for="c14"] {
+    background-image: url('https://s3.india.com/travel/wp-content/uploads/2015/10/bishnupur.jpg');
+}
+
+.card[for="c15"] {
+    background-image: url('https://cdn.shopify.com/s/files/1/1657/2397/files/C4.jpg?v=1517717474');
+}
+
+.card[for="c16"] {
+    background-image: url('https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2022/12/20130020/netarhat-1.jpeg');
+}
+
+.card[for="c17"] {
+    background-image: url('https://travespert.com/blogs/wp-content/uploads/sites/2/2023/04/ziro-Valley.webp');
+}
+
+.card[for="c18"] {
+    background-image: url('https://www.savaari.com/blog/wp-content/uploads/2023/10/Travel.Earth_.jpg');
+}
+
+.card[for="c19"] {
+    background-image: url('https://horizons.tatatrusts.org/2020/december/images/share/floating-feeling-01.jpg');
+}
+
+.card[for="c20"] {
+    background-image: url("https://knowledgeofindia.com/wp-content/uploads/2020/01/Tuirihiau-Waterfall-In-Mizoram.jpg");
+}
+
+.card[for="c21"] {
+    background-image: url("https://www.travelgangtok.com/uploads/destinations/DT-4039-9089/109735273_310674166738885_6222988915280023774_n.jpg");
+}
+
+.card[for="c22"] {
+    background-image: url("https://images.moneycontrol.com/static-mcnews/2024/01/Unakoti-rocks-Tripura-2.jpg?impolicy=website&width=1600&height=900");
+}
+
+.card[for="c23"] {
+    background-image: url("https://live-liamtra-blog.s3.ap-south-1.amazonaws.com/2021/11/A-trail-in-the-valley-leading-to-more-beautiful-places--1024x585.png");
+}
+
+.card[for="c24"] {
+    background-image: url("https://ihplb.b-cdn.net/wp-content/uploads/2023/02/Feature-750x430.jpg");
+}
+
+.card[for="c25"] {
+    background-image: url("https://www.keralatourism.org/images/picture/large/Ponnani_Beach_2835.jpg");
+}
+
+.card[for="c26"] {
+    background-image: url("https://www.travelure.in/wp-content/uploads/2022/07/Warangal-Fort-Header-1.jpg");
+}
+
+.card[for="c27"] {
+    background-image: url("https://www.seawatersports.com/img/newimage/places/parthasarathy-temple.png");
+}
+
+.card[for="c28"] {
+    background-image: url("https://cdn.britannica.com/68/252368-050-C456B7A4/Living-root-bridge-tree-Cherrapunji-Meghalaya-India.jpg");
+}
+
+.card[for="c29"] {
+    background-image: url("https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2022/12/16180328/Sun-Temple-1600x900.jpg");
+}
